@@ -13,3 +13,15 @@ when you want to check certificates in many virtual machine at the same director
 
 if you didnt install ansible or didnt generate keys or something else please read `README.md` file in 
 [Tutorial ansible](https://github.com/moeintavakoli/ansible)
+
+
+#### step 1 --> edit your invenory
+
+you can create or edit an inventory to define your hosts to check into them 
+
+you can easily define your inventory in  `inventory/sample_inventory` and update hosts in group : `group_name` 
+
+  `HOSTNAME` : hostname virtual machine
+  `IP` : IP virtual machine OR domain in dns server OR domain in /etc/hosts      
+  `USERNAME` : username on virtual machine that you can ssh on it 
+  `PORT_SSH` : port ssh on virtual machine (default is 22) 
