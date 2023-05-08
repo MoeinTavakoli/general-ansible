@@ -36,6 +36,9 @@ like
 
 `ansible -m ping group_name -i inventory/sample_inventory`
 
+![ping hosts](./images/ping-inventory.png "ping hosts")
+
+
 #### step 3 --> run ansible with specific vars
 
 fill the vars 
