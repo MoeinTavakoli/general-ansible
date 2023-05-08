@@ -9,13 +9,13 @@ when you want to check certificates in many virtual machine at the same director
 
 ### how to use ??
 
-#### prerequirement
+#### pre requirement
 
 if you didnt install ansible or didnt generate keys or something else please read `README.md` file in 
 [Tutorial ansible](https://github.com/moeintavakoli/ansible)
 
 
-#### step 1 --> edit your invenory
+#### step 1 --> edit your inventory
 
 you can create or edit an inventory to define your hosts to check into them 
 
