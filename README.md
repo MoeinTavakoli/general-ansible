@@ -1,2 +1,2 @@
 # general-ansible
-there are some ansible playbook and useful for DevOps Engineer ( routines tasks ) 
+These are some ansible playbooks which are useful for DevOps Engineers ( routine tasks ) 
