@@ -21,10 +21,10 @@ you can create or edit an inventory to define your hosts to check into them
 
 you can easily define your inventory in  `inventory/sample_inventory` and update hosts in group : `group_name` 
 
-  `HOSTNAME` : hostname virtual machine
-  `IP` : IP virtual machine OR domain in dns server OR domain in /etc/hosts      
-  `USERNAME` : username on virtual machine that you can ssh on it 
-  `PORT_SSH` : port ssh on virtual machine (default is 22) 
+  - `HOSTNAME` : hostname virtual machine
+  - `IP` : IP virtual machine OR domain in dns server OR domain in /etc/hosts      
+  - `USERNAME` : username on virtual machine that you can ssh on it 
+  - `PORT_SSH` : port ssh on virtual machine (default is 22) 
 
 #### step 2 --> check connection to your inventory and group 
 
