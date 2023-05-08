@@ -9,3 +9,9 @@
 #   debug:
 #     msg: "is_exist : {{ is_exist['stdout'] }} - {{ is_exist['stdout'] | int == 1 }}"
 
+
+- name: calculate expiration time ceretificate 
+  shell: openssl x509 -enddate -noout -in {{ certificatePath }}
+  register : date_expiration
+  when: is_exist['stdout'] | int == 1   
+
