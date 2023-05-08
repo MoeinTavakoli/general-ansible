@@ -35,3 +35,17 @@ There many ways to check connection but easy way to check connection is use `pin
 like 
 
 `ansible -m ping group_name -i inventory/sample_inventory`
+
+#### step 3 --> run ansible with specific vars
+
+fill the vars 
+
+  `host` : group hosts that you define in your inventory
+  `certificatePath`: path certificate that you want to check expiration date  
+
+
+`ansible-playbook -e host=group_inventory -i /path/to/inventory playbooks/checkCertificateExpiritaionDate.yml -e 'certificatePath=/path/to/certificate.crt'`
+
+like 
+
+`ansible-playbook -e host=developer -i inventory/sample_inventory playbooks/checkCertificateExpiritaionDate.yml -e 'certificatePath=/etc/telegraf/cert/telegrafCertificate.crt'`
