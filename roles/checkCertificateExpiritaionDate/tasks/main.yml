@@ -1,0 +1,7 @@
+---
+
+- name: check ceretificate is exist 
+  shell: test -f {{ certificatePath }} && echo "1" 
+  ignore_errors : true
+  register : is_exist
+
