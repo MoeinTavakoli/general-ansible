@@ -52,3 +52,5 @@ fill the vars
 like 
 
 `ansible-playbook -e host=developer -i inventory/sample_inventory playbooks/checkCertificateExpiritaionDate.yml -e 'certificatePath=/etc/telegraf/cert/telegrafCertificate.crt'`
+
+![result](./images/result.png "output result")
