@@ -40,8 +40,8 @@ like
 
 fill the vars 
 
-  `host` : group hosts that you define in your inventory
-  `certificatePath`: path certificate that you want to check expiration date  
+  - `host` : group hosts that you define in your inventory
+  - `certificatePath`: path certificate that you want to check expiration date  
 
 
 `ansible-playbook -e host=group_inventory -i /path/to/inventory playbooks/checkCertificateExpiritaionDate.yml -e 'certificatePath=/path/to/certificate.crt'`
