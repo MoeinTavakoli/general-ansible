@@ -1,4 +1,4 @@
-# check certificate expiritaion date playbook
+# check certificate expiration date playbook
 
 
 ### Description
@@ -11,7 +11,7 @@ when you want to check certificates in many virtual machine at the same director
 
 #### pre requirement
 
-if you didnt install ansible or didnt generate keys or something else please read `README.md` file in 
+if you didn't install ansible or didn't generate keys or something else please read `README.md` file in 
 [Tutorial ansible](https://github.com/moeintavakoli/ansible)
 
 
