@@ -25,3 +25,13 @@ you can easily define your inventory in  `inventory/sample_inventory` and update
   `IP` : IP virtual machine OR domain in dns server OR domain in /etc/hosts      
   `USERNAME` : username on virtual machine that you can ssh on it 
   `PORT_SSH` : port ssh on virtual machine (default is 22) 
+
+#### step 2 --> check connection to your inventory and group 
+
+There many ways to check connection but easy way to check connection is use `ping` option
+
+`ansible -m ping group_name -i /path/to/inventory` 
+
+like 
+
+`ansible -m ping group_name -i inventory/sample_inventory`
