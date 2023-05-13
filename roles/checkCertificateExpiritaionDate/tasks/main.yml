@@ -1,0 +1,22 @@
+---
+
+- name: check ceretificate is exist 
+  shell: test -f {{ certificatePath }} && echo "1" 
+  ignore_errors : true
+  register : is_exist
+
+# - name : time certificate expire 
+#   debug:
+#     msg: "is_exist : {{ is_exist['stdout'] }} - {{ is_exist['stdout'] | int == 1 }}"
+
+
+- name: calculate expiration time ceretificate 
+  shell: openssl x509 -enddate -noout -in {{ certificatePath }}
+  register : date_expiration
+  when: is_exist['stdout'] | int == 1   
+
+
+- name : time certificate expire 
+  debug:
+    msg: "hostname : {{ inventory_hostname }} - certificate : {{ certificatePath.split('/')[-1] }} - expired at : {{ date_expiration.stdout.split('=')[1] }}"
+  when: is_exist['stdout'] | int == 1 

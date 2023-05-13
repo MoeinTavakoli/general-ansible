@@ -1,0 +1,13 @@
+### syntax 
+[group_name]
+<HOSTNAME> ansible_host=<IP> ansible_user=<USERNAME> ansible_port=<PORT_SSH>(defualt 22)
+
+# example group of hosts 
+[developer]
+project_Name-1-dev ansible_host=192.168.1.2 ansible_user=moein.tavakoli ansible_port=22
+project_Name-2-dev ansible_host=192.168.1.3 ansible_user=moein.tavakoli ansible_port=22
+
+
+[production]
+project_Name-1-prod ansible_host=192.168.2.2 ansible_user=moein.tavakoli ansible_port=22
+project_Name-2-prod ansible_host=192.168.2.3 ansible_user=moein.tavakoli ansible_port=22
