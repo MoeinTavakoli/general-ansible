@@ -47,10 +47,20 @@ fill the vars
   - `certificatePath`: path certificate that you want to check expiration date  
 
 
-`ansible-playbook -e host=group_inventory -i /path/to/inventory playbooks/checkCertificateExpiritaionDate.yml -e 'certificatePath=/path/to/certificate.crt'`
+```bash
+ansible-playbook playbooks/checkCertificateExpiritaionDate.yml \
+        -i /path/to/inventory \
+        -e host=group_inventory \
+        -e 'certificatePath=/path/to/certificate.crt'
+```
 
 like 
 
-`ansible-playbook -e host=developer -i inventory/sample_inventory playbooks/checkCertificateExpiritaionDate.yml -e 'certificatePath=/etc/telegraf/cert/telegrafCertificate.crt'`
+```bash
+ansible-playbook playbooks/checkCertificateExpiritaionDate.yml \
+        -i inventory/sample_inventory  \
+        -e host=developer \
+        -e 'certificatePath=/etc/telegraf/cert/telegrafCertificate.crt'
+```
 
 ![result](./images/result.png "output result")
