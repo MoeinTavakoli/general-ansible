@@ -1,0 +1,4 @@
+- hosts: "{{ host }}"
+  become: true
+  roles:
+    - updateCertificate

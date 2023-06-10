@@ -1,0 +1,18 @@
+---
+
+- name: backup the certificate
+  copy:
+    src: "{{ remote_cert_path }}{{ certificate_name }}"
+    dest: "{{ remote_cert_path }}{{ certificate_name }}-AnsibleBackup"
+    remote_src: True
+  ignore_errors: true 
+
+- name: remove old certificate (cert-file) 
+  file:
+    path: '{{ remote_cert_path }}/{{ certificate_name }}'
+    state: absent
+
+- name: copy the new certificate (cert-file)
+  template: 
+    src: '{{ certificate_name }}'
+    dest: "{{ remote_cert_path }}"
