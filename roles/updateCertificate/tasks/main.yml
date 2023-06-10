@@ -1,0 +1,11 @@
+---
+
+- name: remove old web certificate (cert-file) 
+  file:
+    path: '{{ remote_cert_path }}/{{ certificate_name }}'
+    state: absent
+
+- name: copy the new certificate (cert-file)
+  template: 
+    src: '{{ certificate_name }}'
+    dest: "{{ remote_cert_path }}"
