@@ -7,7 +7,7 @@ When you want to update (replace) certificate files in many virtual machine , yo
 
 ----
 
-### how to use ??
+### How to use ?
 
 #### pre requirement
 
@@ -15,7 +15,7 @@ if you didn't install ansible or didn't generate keys or something else please r
 [Tutorial ansible](https://github.com/moeintavakoli/ansible)
 
 
-### step 1 --> edit your inventory
+### Step 1 : Edit your inventory
 
 you can create or edit an inventory to define your hosts to check into them 
 
@@ -26,7 +26,7 @@ you can easily define your inventory in  `inventory/sample_inventory` and update
   - `USERNAME` : username on virtual machine that you can ssh on it 
   - `PORT_SSH` : port ssh on virtual machine (default is 22) 
 
-### step 2 --> check connection to your inventory and group 
+### Step 2 : Check connection to your inventory and group 
 
 There many ways to check connection but easy way to check connection is use `ping` option
 
@@ -39,7 +39,7 @@ like
 ![ping hosts](./images/ping-inventory.png "ping hosts")
 
 
-### step 3 --> run ansible with specific vars
+### Step 3 : Run ansible with specific vars
 
 fill the vars 
 
