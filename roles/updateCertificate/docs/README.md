@@ -51,7 +51,7 @@ fill the vars
 
 ```bash
 ansible-playbook playbooks/updateCertificate.yml \
-        -i inventory/sample_inventory \
+        -i /path/to/inventory \
         -e host= \
         -e 'remote_cert_path=' \
         -e 'certificate_name=' \
