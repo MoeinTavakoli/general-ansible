@@ -68,3 +68,6 @@ ansible-playbook playbooks/updateCertificate.yml \
         -e 'certificate_name=certificate.crt' \
         --ask-become-pass
 ```
+Finally the result : 
+
+![result](./images/result.png "output result")
