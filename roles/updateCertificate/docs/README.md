@@ -45,7 +45,10 @@ fill the vars
 
   - `host` : group hosts that you define in your inventory
   - `remote_cert_path` : path certificate in remote machine that you want to update (replace) it 
-  - `certificate_name` : certificate name in control machine that you want to send it into remote machines . this certificate located in  **roles/updateCertificate/tasks/templates/**
+  - `certificate_name` : certificate name in control machine that you want to send it into remote machines . this certificate located in  **roles/updateCertificate/tasks/templates/** . 
+  
+    For example, if you want to update **nginx.crt**, you must copy this certificate to **roles/updateCertificate/tasks/templates/** and then specify the file name **nginx.crt** when running the playbook to send and replace it.
+
 ```bash
 ansible-playbook playbooks/updateCertificate.yml \
         -i inventory/sample_inventory \
