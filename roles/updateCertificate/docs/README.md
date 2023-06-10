@@ -58,7 +58,7 @@ ansible-playbook playbooks/updateCertificate.yml \
         --ask-become-pass
 ```
 
-like 
+For example 
 
 ```bash
 ansible-playbook playbooks/updateCertificate.yml \
