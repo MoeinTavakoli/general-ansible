@@ -11,3 +11,4 @@ for example [Tutorial check certificate expiration date](./roles/checkCertificat
 ## Table of Contents
 
 1. [Check certificate expiration date](./roles/checkCertificateExpiritaionDate/docs/README.md)
+2. [Update certificate](./roles/updateCertificate/docs/README.md)
